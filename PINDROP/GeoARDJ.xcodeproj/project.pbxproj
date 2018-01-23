@@ -1,0 +1,880 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040B9D3D1F28940F003E9D02 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B9D3C1F28940F003E9D02 /* Utilities.swift */; };
+		040B9DD01F28C881003E9D02 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B9DCF1F28C880003E9D02 /* ModelData.swift */; };
+		04743AC81F29E0130058ADE5 /* LocTextureFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04743AC71F29E0130058ADE5 /* LocTextureFile.swift */; };
+		04743ACD1F2A0AD90058ADE5 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04743ACC1F2A0AD90058ADE5 /* Downloader.swift */; };
+		04743ACF1F2B211E0058ADE5 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04743ACE1F2B211E0058ADE5 /* StringUtils.swift */; };
+		04789A771F3C4FFE00074862 /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04789A761F3C4FFE00074862 /* Factories.swift */; };
+		04798BE81F27529000C83EF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04798BE71F27529000C83EF7 /* AppDelegate.swift */; };
+		04798BEA1F27529000C83EF7 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 04798BE91F27529000C83EF7 /* art.scnassets */; };
+		04798BEC1F27529000C83EF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04798BEB1F27529000C83EF7 /* ViewController.swift */; };
+		04798BEF1F27529000C83EF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04798BED1F27529000C83EF7 /* Main.storyboard */; };
+		04798BF11F27529000C83EF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04798BF01F27529000C83EF7 /* Assets.xcassets */; };
+		04798BF41F27529000C83EF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04798BF21F27529000C83EF7 /* LaunchScreen.storyboard */; };
+		04798BFF1F27529000C83EF7 /* GeoARDJTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04798BFE1F27529000C83EF7 /* GeoARDJTests.swift */; };
+		04798C0A1F27529000C83EF7 /* GeoARDJUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04798C091F27529000C83EF7 /* GeoARDJUITests.swift */; };
+		04798C191F27534C00C83EF7 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04798C181F27534C00C83EF7 /* ARKit.framework */; };
+		04798C1B1F27535600C83EF7 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04798C1A1F27535600C83EF7 /* SceneKit.framework */; };
+		04798C1D1F27536400C83EF7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04798C1C1F27536400C83EF7 /* CoreLocation.framework */; };
+		04798C1F1F2753B000C83EF7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04798C1E1F2753AF00C83EF7 /* MapKit.framework */; };
+		04798C211F2753CD00C83EF7 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04798C201F2753CD00C83EF7 /* NotificationCenter.framework */; };
+		04F12FF11F2B7896004F8783 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F12FF01F2B7896004F8783 /* Utils.swift */; };
+		10EF236BC135E37FBE002AD3 /* Pods_GeoARDJUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442E7A4EDC1A980A4C5462E7 /* Pods_GeoARDJUITests.framework */; };
+		11845533B47CA70623F1D8B1 /* Pods_GeoARDJTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0853479D93F6C3F37E870BED /* Pods_GeoARDJTests.framework */; };
+		223D36C01FA783F60049A7C0 /* optimized in Resources */ = {isa = PBXBuildFile; fileRef = 223D36BF1FA783F50049A7C0 /* optimized */; };
+		294D9D121FC786D000AF5E82 /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294D9D111FC786D000AF5E82 /* FocusSquare.swift */; };
+		45F253EBDF9253C9A1BD2422 /* Pods_GeoARDJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D9549E5C6DB29F1C9AEE2D /* Pods_GeoARDJ.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04798BFB1F27529000C83EF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04798BDC1F27529000C83EF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04798BE31F27529000C83EF7;
+			remoteInfo = GeoARDJ;
+		};
+		04798C061F27529000C83EF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04798BDC1F27529000C83EF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04798BE31F27529000C83EF7;
+			remoteInfo = GeoARDJ;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		040B9D5B1F28BC73003E9D02 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		040B9D3C1F28940F003E9D02 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		040B9DCF1F28C880003E9D02 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		04743AC71F29E0130058ADE5 /* LocTextureFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocTextureFile.swift; sourceTree = "<group>"; };
+		04743ACC1F2A0AD90058ADE5 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		04743ACE1F2B211E0058ADE5 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		04789A761F3C4FFE00074862 /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
+		04798BE41F27529000C83EF7 /* GeoARDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoARDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04798BE71F27529000C83EF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04798BE91F27529000C83EF7 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		04798BEB1F27529000C83EF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04798BEE1F27529000C83EF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04798BF01F27529000C83EF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04798BF31F27529000C83EF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04798BF51F27529000C83EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04798BFA1F27529000C83EF7 /* GeoARDJTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoARDJTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04798BFE1F27529000C83EF7 /* GeoARDJTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoARDJTests.swift; sourceTree = "<group>"; };
+		04798C001F27529000C83EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04798C051F27529000C83EF7 /* GeoARDJUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoARDJUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04798C091F27529000C83EF7 /* GeoARDJUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoARDJUITests.swift; sourceTree = "<group>"; };
+		04798C0B1F27529000C83EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04798C181F27534C00C83EF7 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		04798C1A1F27535600C83EF7 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		04798C1C1F27536400C83EF7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		04798C1E1F2753AF00C83EF7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		04798C201F2753CD00C83EF7 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		04F12FF01F2B7896004F8783 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		0853479D93F6C3F37E870BED /* Pods_GeoARDJTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoARDJTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		223D36BF1FA783F50049A7C0 /* optimized */ = {isa = PBXFileReference; lastKnownFileType = folder; path = optimized; sourceTree = "<group>"; };
+		294D9D111FC786D000AF5E82 /* FocusSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
+		32289B9C979FF345292C50EC /* Pods-GeoARDJTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoARDJTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoARDJTests/Pods-GeoARDJTests.release.xcconfig"; sourceTree = "<group>"; };
+		442E7A4EDC1A980A4C5462E7 /* Pods_GeoARDJUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoARDJUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4B864006F0341D94419453 /* Pods-GeoARDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoARDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoARDJ/Pods-GeoARDJ.release.xcconfig"; sourceTree = "<group>"; };
+		7647992B31F40ED14B17D297 /* Pods-GeoARDJUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoARDJUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoARDJUITests/Pods-GeoARDJUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CC68F4413E54D30009E35B83 /* Pods-GeoARDJUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoARDJUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoARDJUITests/Pods-GeoARDJUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DBFACB9F14491C1733961CCC /* Pods-GeoARDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoARDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoARDJ/Pods-GeoARDJ.debug.xcconfig"; sourceTree = "<group>"; };
+		E8D9549E5C6DB29F1C9AEE2D /* Pods_GeoARDJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoARDJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF0A6CDA2F47F5399B9AABA4 /* Pods-GeoARDJTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoARDJTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoARDJTests/Pods-GeoARDJTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04798BE11F27529000C83EF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04798C211F2753CD00C83EF7 /* NotificationCenter.framework in Frameworks */,
+				04798C1F1F2753B000C83EF7 /* MapKit.framework in Frameworks */,
+				04798C1D1F27536400C83EF7 /* CoreLocation.framework in Frameworks */,
+				04798C1B1F27535600C83EF7 /* SceneKit.framework in Frameworks */,
+				04798C191F27534C00C83EF7 /* ARKit.framework in Frameworks */,
+				45F253EBDF9253C9A1BD2422 /* Pods_GeoARDJ.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04798BF71F27529000C83EF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11845533B47CA70623F1D8B1 /* Pods_GeoARDJTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04798C021F27529000C83EF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10EF236BC135E37FBE002AD3 /* Pods_GeoARDJUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		040B9D5C1F28BE6C003E9D02 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				040B9DCF1F28C880003E9D02 /* ModelData.swift */,
+				04743AC71F29E0130058ADE5 /* LocTextureFile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04743ACB1F2A0ABA0058ADE5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				04743ACC1F2A0AD90058ADE5 /* Downloader.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		04789A751F3C4FBF00074862 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				294D9D111FC786D000AF5E82 /* FocusSquare.swift */,
+				04789A761F3C4FFE00074862 /* Factories.swift */,
+				223D36BF1FA783F50049A7C0 /* optimized */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		04798BDB1F27529000C83EF7 = {
+			isa = PBXGroup;
+			children = (
+				04798BE61F27529000C83EF7 /* GeoARDJ */,
+				04798BFD1F27529000C83EF7 /* GeoARDJTests */,
+				04798C081F27529000C83EF7 /* GeoARDJUITests */,
+				04798BE51F27529000C83EF7 /* Products */,
+				04798C171F27534C00C83EF7 /* Frameworks */,
+				E85F66A3FD2278D38D44079E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		04798BE51F27529000C83EF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04798BE41F27529000C83EF7 /* GeoARDJ.app */,
+				04798BFA1F27529000C83EF7 /* GeoARDJTests.xctest */,
+				04798C051F27529000C83EF7 /* GeoARDJUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04798BE61F27529000C83EF7 /* GeoARDJ */ = {
+			isa = PBXGroup;
+			children = (
+				04789A751F3C4FBF00074862 /* Factories */,
+				04F12FEF1F2B787C004F8783 /* Utils */,
+				04743ACB1F2A0ABA0058ADE5 /* Networking */,
+				040B9D5C1F28BE6C003E9D02 /* Models */,
+				04798BE71F27529000C83EF7 /* AppDelegate.swift */,
+				04798BE91F27529000C83EF7 /* art.scnassets */,
+				04798BEB1F27529000C83EF7 /* ViewController.swift */,
+				04798BED1F27529000C83EF7 /* Main.storyboard */,
+				04798BF01F27529000C83EF7 /* Assets.xcassets */,
+				04798BF21F27529000C83EF7 /* LaunchScreen.storyboard */,
+				04798BF51F27529000C83EF7 /* Info.plist */,
+			);
+			path = GeoARDJ;
+			sourceTree = "<group>";
+		};
+		04798BFD1F27529000C83EF7 /* GeoARDJTests */ = {
+			isa = PBXGroup;
+			children = (
+				04798BFE1F27529000C83EF7 /* GeoARDJTests.swift */,
+				04798C001F27529000C83EF7 /* Info.plist */,
+			);
+			path = GeoARDJTests;
+			sourceTree = "<group>";
+		};
+		04798C081F27529000C83EF7 /* GeoARDJUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04798C091F27529000C83EF7 /* GeoARDJUITests.swift */,
+				04798C0B1F27529000C83EF7 /* Info.plist */,
+			);
+			path = GeoARDJUITests;
+			sourceTree = "<group>";
+		};
+		04798C171F27534C00C83EF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04798C201F2753CD00C83EF7 /* NotificationCenter.framework */,
+				04798C1E1F2753AF00C83EF7 /* MapKit.framework */,
+				04798C1C1F27536400C83EF7 /* CoreLocation.framework */,
+				04798C1A1F27535600C83EF7 /* SceneKit.framework */,
+				04798C181F27534C00C83EF7 /* ARKit.framework */,
+				E8D9549E5C6DB29F1C9AEE2D /* Pods_GeoARDJ.framework */,
+				0853479D93F6C3F37E870BED /* Pods_GeoARDJTests.framework */,
+				442E7A4EDC1A980A4C5462E7 /* Pods_GeoARDJUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04F12FEF1F2B787C004F8783 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				040B9D3C1F28940F003E9D02 /* Utilities.swift */,
+				04743ACE1F2B211E0058ADE5 /* StringUtils.swift */,
+				04F12FF01F2B7896004F8783 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E85F66A3FD2278D38D44079E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBFACB9F14491C1733961CCC /* Pods-GeoARDJ.debug.xcconfig */,
+				5C4B864006F0341D94419453 /* Pods-GeoARDJ.release.xcconfig */,
+				FF0A6CDA2F47F5399B9AABA4 /* Pods-GeoARDJTests.debug.xcconfig */,
+				32289B9C979FF345292C50EC /* Pods-GeoARDJTests.release.xcconfig */,
+				CC68F4413E54D30009E35B83 /* Pods-GeoARDJUITests.debug.xcconfig */,
+				7647992B31F40ED14B17D297 /* Pods-GeoARDJUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04798BE31F27529000C83EF7 /* GeoARDJ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04798C0E1F27529000C83EF7 /* Build configuration list for PBXNativeTarget "GeoARDJ" */;
+			buildPhases = (
+				E077D13B7ECA2C8F781375C2 /* [CP] Check Pods Manifest.lock */,
+				04798BE01F27529000C83EF7 /* Sources */,
+				04798BE11F27529000C83EF7 /* Frameworks */,
+				04798BE21F27529000C83EF7 /* Resources */,
+				040B9D5B1F28BC73003E9D02 /* Embed Frameworks */,
+				BF22CFC7F46B89FDAEC4E65F /* [CP] Embed Pods Frameworks */,
+				8235D5A59B6D3B1367BC375B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoARDJ;
+			productName = GeoARDJ;
+			productReference = 04798BE41F27529000C83EF7 /* GeoARDJ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04798BF91F27529000C83EF7 /* GeoARDJTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04798C111F27529000C83EF7 /* Build configuration list for PBXNativeTarget "GeoARDJTests" */;
+			buildPhases = (
+				A76A5F70FC28CEF6F2537E27 /* [CP] Check Pods Manifest.lock */,
+				04798BF61F27529000C83EF7 /* Sources */,
+				04798BF71F27529000C83EF7 /* Frameworks */,
+				04798BF81F27529000C83EF7 /* Resources */,
+				AED2B1394CD1E8E4C0DFEFD4 /* [CP] Embed Pods Frameworks */,
+				B7114A14E919F901B8028004 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04798BFC1F27529000C83EF7 /* PBXTargetDependency */,
+			);
+			name = GeoARDJTests;
+			productName = GeoARDJTests;
+			productReference = 04798BFA1F27529000C83EF7 /* GeoARDJTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04798C041F27529000C83EF7 /* GeoARDJUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04798C141F27529000C83EF7 /* Build configuration list for PBXNativeTarget "GeoARDJUITests" */;
+			buildPhases = (
+				A329A347074C64AC41DB136B /* [CP] Check Pods Manifest.lock */,
+				04798C011F27529000C83EF7 /* Sources */,
+				04798C021F27529000C83EF7 /* Frameworks */,
+				04798C031F27529000C83EF7 /* Resources */,
+				F0B8C02945597FF014F4D093 /* [CP] Embed Pods Frameworks */,
+				BE0F0846307E5D1890E3DF1B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04798C071F27529000C83EF7 /* PBXTargetDependency */,
+			);
+			name = GeoARDJUITests;
+			productName = GeoARDJUITests;
+			productReference = 04798C051F27529000C83EF7 /* GeoARDJUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04798BDC1F27529000C83EF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Mac;
+				TargetAttributes = {
+					04798BE31F27529000C83EF7 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					04798BF91F27529000C83EF7 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 04798BE31F27529000C83EF7;
+					};
+					04798C041F27529000C83EF7 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 04798BE31F27529000C83EF7;
+					};
+				};
+			};
+			buildConfigurationList = 04798BDF1F27529000C83EF7 /* Build configuration list for PBXProject "GeoARDJ" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04798BDB1F27529000C83EF7;
+			productRefGroup = 04798BE51F27529000C83EF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04798BE31F27529000C83EF7 /* GeoARDJ */,
+				04798BF91F27529000C83EF7 /* GeoARDJTests */,
+				04798C041F27529000C83EF7 /* GeoARDJUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04798BE21F27529000C83EF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04798BEA1F27529000C83EF7 /* art.scnassets in Resources */,
+				04798BF41F27529000C83EF7 /* LaunchScreen.storyboard in Resources */,
+				223D36C01FA783F60049A7C0 /* optimized in Resources */,
+				04798BF11F27529000C83EF7 /* Assets.xcassets in Resources */,
+				04798BEF1F27529000C83EF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04798BF81F27529000C83EF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04798C031F27529000C83EF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8235D5A59B6D3B1367BC375B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GeoARDJ/Pods-GeoARDJ-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoARDJ/Pods-GeoARDJ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A329A347074C64AC41DB136B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoARDJUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A76A5F70FC28CEF6F2537E27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoARDJTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AED2B1394CD1E8E4C0DFEFD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoARDJTests/Pods-GeoARDJTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7114A14E919F901B8028004 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoARDJTests/Pods-GeoARDJTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE0F0846307E5D1890E3DF1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoARDJUITests/Pods-GeoARDJUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF22CFC7F46B89FDAEC4E65F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GeoARDJ/Pods-GeoARDJ-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework",
+				"${BUILT_PRODUCTS_DIR}/Zip/Zip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVReflection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoARDJ/Pods-GeoARDJ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E077D13B7ECA2C8F781375C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoARDJ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0B8C02945597FF014F4D093 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoARDJUITests/Pods-GeoARDJUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04798BE01F27529000C83EF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04789A771F3C4FFE00074862 /* Factories.swift in Sources */,
+				040B9D3D1F28940F003E9D02 /* Utilities.swift in Sources */,
+				040B9DD01F28C881003E9D02 /* ModelData.swift in Sources */,
+				04743ACD1F2A0AD90058ADE5 /* Downloader.swift in Sources */,
+				04743ACF1F2B211E0058ADE5 /* StringUtils.swift in Sources */,
+				04798BEC1F27529000C83EF7 /* ViewController.swift in Sources */,
+				04798BE81F27529000C83EF7 /* AppDelegate.swift in Sources */,
+				04743AC81F29E0130058ADE5 /* LocTextureFile.swift in Sources */,
+				04F12FF11F2B7896004F8783 /* Utils.swift in Sources */,
+				294D9D121FC786D000AF5E82 /* FocusSquare.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04798BF61F27529000C83EF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04798BFF1F27529000C83EF7 /* GeoARDJTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04798C011F27529000C83EF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04798C0A1F27529000C83EF7 /* GeoARDJUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04798BFC1F27529000C83EF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04798BE31F27529000C83EF7 /* GeoARDJ */;
+			targetProxy = 04798BFB1F27529000C83EF7 /* PBXContainerItemProxy */;
+		};
+		04798C071F27529000C83EF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04798BE31F27529000C83EF7 /* GeoARDJ */;
+			targetProxy = 04798C061F27529000C83EF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04798BED1F27529000C83EF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04798BEE1F27529000C83EF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04798BF21F27529000C83EF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04798BF31F27529000C83EF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04798C0C1F27529000C83EF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04798C0D1F27529000C83EF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04798C0F1F27529000C83EF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBFACB9F14491C1733961CCC /* Pods-GeoARDJ.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZ3QJNYWAK;
+				INFOPLIST_FILE = GeoARDJ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litslink.GeoARDJ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		04798C101F27529000C83EF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C4B864006F0341D94419453 /* Pods-GeoARDJ.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZ3QJNYWAK;
+				INFOPLIST_FILE = GeoARDJ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litslink.GeoARDJ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		04798C121F27529000C83EF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF0A6CDA2F47F5399B9AABA4 /* Pods-GeoARDJTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GeoARDJTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.GeoARDJTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoARDJ.app/GeoARDJ";
+			};
+			name = Debug;
+		};
+		04798C131F27529000C83EF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32289B9C979FF345292C50EC /* Pods-GeoARDJTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GeoARDJTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.GeoARDJTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoARDJ.app/GeoARDJ";
+			};
+			name = Release;
+		};
+		04798C151F27529000C83EF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC68F4413E54D30009E35B83 /* Pods-GeoARDJUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GeoARDJUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.GeoARDJUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeoARDJ;
+			};
+			name = Debug;
+		};
+		04798C161F27529000C83EF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7647992B31F40ED14B17D297 /* Pods-GeoARDJUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GeoARDJUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mac.GeoARDJUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeoARDJ;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04798BDF1F27529000C83EF7 /* Build configuration list for PBXProject "GeoARDJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04798C0C1F27529000C83EF7 /* Debug */,
+				04798C0D1F27529000C83EF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04798C0E1F27529000C83EF7 /* Build configuration list for PBXNativeTarget "GeoARDJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04798C0F1F27529000C83EF7 /* Debug */,
+				04798C101F27529000C83EF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04798C111F27529000C83EF7 /* Build configuration list for PBXNativeTarget "GeoARDJTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04798C121F27529000C83EF7 /* Debug */,
+				04798C131F27529000C83EF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04798C141F27529000C83EF7 /* Build configuration list for PBXNativeTarget "GeoARDJUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04798C151F27529000C83EF7 /* Debug */,
+				04798C161F27529000C83EF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04798BDC1F27529000C83EF7 /* Project object */;
+}

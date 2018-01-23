@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D712610954CA9BFA7A6E793AC8CA9FD9B6557F56" : 9223372036854775807,
+    "67620B5EFA902936DF04070AF595B76AB0333747" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5C12F212-B83A-42BB-846C-F1B7E0F17AA0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D712610954CA9BFA7A6E793AC8CA9FD9B6557F56" : "..\/..\/Frameworks\/AlamofireObjectMapper\/AlamofireObjectMapper",
+    "67620B5EFA902936DF04070AF595B76AB0333747" : "..\/..\/Frameworks\/Alamofire\/Alamofire"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GeoARDJ",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GeoARDJ.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alamofire\/Alamofire.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67620B5EFA902936DF04070AF595B76AB0333747"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tristanhimmelman\/AlamofireObjectMapper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D712610954CA9BFA7A6E793AC8CA9FD9B6557F56"
+    }
+  ]
+}

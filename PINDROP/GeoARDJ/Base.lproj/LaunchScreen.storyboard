@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="initialone" translatesAutoresizingMaskIntoConstraints="NO" id="mdu-AI-Jzk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="symbol" translatesAutoresizingMaskIntoConstraints="NO" id="Y0S-eQ-ovJ">
+                                <rect key="frame" x="16" y="183" width="343" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="1Ab-8a-B5K"/>
+                                    <constraint firstAttribute="width" constant="343" id="V1u-rn-K0m"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mdu-AI-Jzk" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="7aq-Ig-eyv"/>
+                            <constraint firstItem="mdu-AI-Jzk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="86a-W5-1MQ"/>
+                            <constraint firstItem="Y0S-eQ-ovJ" firstAttribute="centerY" secondItem="mdu-AI-Jzk" secondAttribute="centerY" id="Chk-QF-f5G"/>
+                            <constraint firstItem="mdu-AI-Jzk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="J1D-Q8-LYr"/>
+                            <constraint firstItem="mdu-AI-Jzk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XL5-bR-Z7E"/>
+                            <constraint firstItem="Y0S-eQ-ovJ" firstAttribute="centerX" secondItem="mdu-AI-Jzk" secondAttribute="centerX" id="oCI-w2-zAv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="667"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="initialone" width="400" height="700"/>
+        <image name="symbol" width="300" height="300"/>
+    </resources>
+</document>
